@@ -210,7 +210,7 @@ export default function ReactSearchAutocomplete<T>({
             setHighlightedItem={handleSetHighlightedItem}
           />
           <Results
-            results={results}
+            results={inputSearchString === searchString ? [] : results}
             onClick={handleOnClick}
             setSearchString={setSearchString}
             showIcon={showIcon}
