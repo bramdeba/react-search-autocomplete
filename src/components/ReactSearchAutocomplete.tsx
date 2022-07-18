@@ -134,6 +134,7 @@ export default function ReactSearchAutocomplete<T>({
   }
 
   const handleSetSearchString = ({ target }: ChangeEvent<HTMLInputElement>) => {
+    onChange(target.value)
     const keyword = target.value
 
     setSearchString(keyword)
